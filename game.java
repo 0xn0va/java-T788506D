@@ -6,7 +6,10 @@
 //  2003-10-02  File created.
 //  2004-11-06  Last modification.
 
+// Abdo: added random number generate to game to be a little fair! :)
+
 import java.util.* ;
+// import random
 import java.util.Random;
 
 class Game
@@ -25,7 +28,10 @@ class Game
       integer_from_keyboard  =  keyboard.nextInt() ;
 
       // one_larger_integer  =  integer_from_keyboard  +  1 ;
+
+      // Create random number
       int random = (int )(Math.random() * 2147483646 + 1);
+      // assign the initial variable to random generated number
       one_larger_integer  =  random ;
 
       System.out.print( "\n You typed in " + integer_from_keyboard + "."
